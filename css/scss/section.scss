@@ -1,0 +1,205 @@
+.container-main {
+    display: flex;
+    max-width: 50%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 500px;
+    font-family: 'Montserrat', sans-serif;
+    &.-small {
+        font-size: 18px;
+    }
+    &.-medium {
+        font-size: 32px;
+    }
+    &.-big {
+        font-size: 48px;
+    }
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;        
+    >.field {
+        min-height: 30px;
+        min-width: 400px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        -webkit-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);
+    }
+    >.action {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 120px;
+        height: 50px;
+        border: none;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        background-color: #EE5A24;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background: #d95423;
+        }
+    }
+}
+
+.container-user {
+    display: none;
+    max-width: 50%;
+    height: 80px;
+    align-items: center;
+    margin: 600px auto 0 auto;
+}
+
+.card-user {
+    background: white;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.1);   
+    >.img {
+        margin-top: 25px;
+        border-radius: 50%;
+        width: 180px;
+        border: 4px solid #EE5A24;       
+    }
+    >.name {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        text-align: left;
+        padding: 0 20px;
+        margin-top: 25px;
+    }
+    >.bio {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 8px;
+        padding: 0 20px;
+        line-height: 1.3em;
+    }
+    >.card-nav {
+        list-style: none;
+        text-align: left;
+        padding: 20px;        
+    }
+    > .card-nav >.card-nav-item {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        &:nth-child(1)::before {
+            display: block;
+            content: 'Seguidores ';
+            color: #EE5A24;
+            font-weight: bold;
+        }  
+        &:nth-child(2)::before{
+            display: block;
+            content: 'Local ';
+            color: #EE5A24;
+            font-weight: bold;
+        }  
+    }
+    
+}
+
+
+.ativo {
+    display: flex;
+    animation: anima 3s forwards;
+}
+
+.remove-margin {
+    animation: anima2 .5s forwards
+}
+
+@keyframes anima {
+    from {
+            opacity: 0;
+            transform: translate3d(0, -30, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes anima2 {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -150px;
+    }
+}
+
+.card-rep {
+    background: white;
+    margin-left: 50px;
+    width: 550px;
+    -webkit-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.2);
+    > .rep-nav {
+        overflow: auto;
+        height: 500px;
+        list-style: none;
+        padding: 20px 10px;
+        
+    }
+    > .rep-nav > .rep-item {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+        padding: 8px 8px;
+        margin: 20px 0;
+        border-radius: 25px;
+        background: #EE5A24;
+        
+    }    
+}
+
+
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* width */
+.rep-nav::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .rep-nav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .rep-nav::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .rep-nav::-webkit-scrollbar-thumb:hover {
+    background: #EE5A24;
+  }

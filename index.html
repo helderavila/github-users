@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitUser</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header-background">
+        <nav class="container nav">
+            <h3 class="logo">GitUser</h3>
+            <ul class="navbar">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-main">
+            <h1 class="title -big">Pesquisar usuario do github</h1>
+            <div class="search-form">
+                <input type="text" placeholder="Digite o usuario" id="inputUser" class="field">
+                <button id="btn" class="action">Pesquisar</button>          
+            </div>
+            <span id="spanErro"></span>
+        </section>
+    </main>
+    <main>
+        <section class="container-user">
+            <div class="card-user">
+                <img id="imgUser" src="" alt="Imagem" class="img">
+                <h1 id="nomeUser" class="name"></h1>
+                <p id="bioUser" class="bio"></p>
+                <ul class="card-nav">
+                    <li class="card-nav-item" id="userFollowers"></li>
+                    <li class="card-nav-item" id="userLocation"></li>
+                </ul>
+            </div>
+            <div class="card-rep" id="info-rep">
+                <ul class="rep-nav">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
